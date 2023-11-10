@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cuáles son tus gustos?</title>
+</head>
+<body>
+    <header>
+        <h1>¿Cuáles son tus gustos?</h1>
+        <hr>
+    </header>
+    <main>
+        <form action="/formulario">
+            <label>
+                <p>1) Nombre</p>
+                <input name="nombre" type="text">
+            </label>
+            <label>
+                <p>2) Apellido(s)</p>
+                <input name="apellidos" type="text">
+            </label>
+            <label>
+                <p>3) Edad</p>
+                <input name="edad" type="number">
+            </label>
+            <label>
+                <p>4) ¿Cómo te gusta el café?</p>
+                <input name="cafe" type="radio" value="solo">Solo
+                <input name="cafe" type="radio" value="leche">Con leche
+                <input name="cafe" type="radio" value="no">No me gusta el café
+            </label>
+            <label>
+                <p>5) ¿Dónde ves las series?</p>
+                <input name="series" type="checkbox" value="hbo">HBO
+                <input name="series" type="checkbox" value="netflix">Netflix
+                <input name="series" type="checkbox" value="amazon">Amazon
+            </label>
+            <label>
+                <p>6) Cuéntanos más sobre ti</p>
+                <textarea type="text" name="comentarios" placeholder="Escribe lo que más te apasiona..." cols="40" rows="5"></textarea>
+            </label>
+            <br>
+            <button type="submit">Enviar información</button>
+            <button type="reset">Limpiar formulario</button>
+        </form>
+    </main>
+</body>
+</html>

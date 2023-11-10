@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios </title>
+</head>
+<body>
+    <form action="/formulario">
+        <label>
+            Nombre
+            <input name="nombre" type="text" placeholder="Introduce tu nombre...">
+        </label>
+        <!--  OTRA OPCIÓN:
+        <form>
+            <label for="nombre"> Nombre </label>
+            <input id="nombre">
+        </form> 
+        --> 
+        <br>
+        <label>
+            Apellido
+            <input name="nombre" type="text" placeholder="Ahora tu apellido...">
+        </label>
+        <br>
+        <label>
+            Edad
+            <input name="edad" type="number" placeholder="Tu apellido...">
+        </label>
+        <br>
+        <label>
+            Email
+            <input name="email" type="email" placeholder="Tu correo electrónico">
+        </label>
+        <br>
+        <label>
+            Contraseña
+            <input name="contrasena" type="password" placeholder="Introduce una clave...">
+        </label>
+        <br>
+        <label>
+            Observaciones
+            <textarea name="observaciones" placeholder="Observaciones" cols="10" rows="10"></textarea>
+        </label>
+        <br>
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Borrar información</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/*
+    1) Sintaxis
+
+            SELECTOR {
+                PROPIEDAD: VALOR;
+            }
+
+    2) Inclusión de css en nuestro proyecto
+        - Estilos en línea
+        - Estilos en el head del documento HTML
+        - Ficheiros externos
+
+    3) Selectores CSS
+        - Etiqueta
+        - Clases
+        - ID
+        - Selectores múltiples
+        - Selectores por relación
+
+    4) Tipos de LETRA
+        > color
+        > font-family
+        > font-size
+        > font-weith
+        > text-decoration
+        > text-transaform
+
+    5) DISEÑO del TEXTO
+        >text-align
+        >line-height
+        >letter-spacing
+        >word-spacing
+
+    6) Fuentes
+        >font-face
+*/
+
+.bloque{
+    margin: 15px 0;
+    border: 2px solid black;
+    width: 300px;
+}
+
+.primer{
+    background-color: green;
+    position: fixed;
+    bottom: 50px;
+}

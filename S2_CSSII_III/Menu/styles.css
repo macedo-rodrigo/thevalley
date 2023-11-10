@@ -1,0 +1,51 @@
+
+body{
+    background-color: linen;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    bottom: 0;
+    width: 85px;
+    height: 100%;
+    background-color: darkslateblue;
+}
+
+header:hover{
+    width: 300px;
+}
+
+.menu-list{
+    padding: 0;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 22px;
+    overflow: hidden;
+}
+
+.menu-list a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list li{
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+.menu-list li:hover{
+    background-color: mediumseagreen;
+    font-weight: normal;
+}
+
+.menu-list a::before{
+    content: url("https://img.icons8.com/ios/ffffff/checked--v1.png");
+    margin-right: 35px;
+}

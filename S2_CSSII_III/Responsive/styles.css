@@ -1,0 +1,28 @@
+
+header, section, main, aside, footer{
+    height: 300px;
+    border: 2px solid black;
+}
+
+header, section, footer{
+    background-color: pink;
+}
+
+section{
+    display: flex;
+}
+
+main{
+    background-color: blue;
+    width: 70%;
+}
+
+aside{
+    background-color: blueviolet;
+    width: 30%;
+    min-width: 400px;
+}
+
+main, aside{
+    display: inline-block;
+}

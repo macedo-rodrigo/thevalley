@@ -15,8 +15,9 @@ let rebano2 = ["o","o","o","v","o","v","o","o","v","o","v","o"];
 
 function counter(list1, list2){
     let bothLists = list1.concat(list2);
-    return bothLists.length; //solo estoy logrando pintar el total entre ovejas y vacas, sigo intentando resolver este problema
-    
+    let nVacas = bothLists.filter(i => i === "v").length;
+    let nOvejas = bothLists.length - nVacas;
+    return `Ovejas: ${nOvejas} ---- Vacas: ${nVacas}`;
 }
 
-console.log(counter(rebano1,rebano2));
+console.log(counter(rebano1,rebano2))

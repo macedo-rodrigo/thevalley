@@ -7,7 +7,7 @@
 
 */
 
-let word = "feira";
+let word = "camino";
 
 function middleCharacter(str){
    let halfWord = Math.floor(str.length / 2);

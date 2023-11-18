@@ -19,5 +19,5 @@ function winner(list){
 
 console.log(winner(playerList));
 
-//Aquì no hice solo, busqué en foruns de internet
+//Aquí no hice solo, busqué en foruns de internet
 

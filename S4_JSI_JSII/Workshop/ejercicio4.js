@@ -13,7 +13,7 @@ function position (str){
     let arrStr = str.split(""); //creo un array con cada letra de mi string
     const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'];
     for (i=0; i < arrStr.length; i++){
-        result += (alphabet.findIndex(value => value === arrStr[i]) + 1) + '-';
+        result += (alphabet.findIndex(value => value === arrStr[i]) + 1) + '-'; //recisar este metodo para el futuro
     }
     return result
 }

@@ -9,7 +9,7 @@
             [2,1,1,2,2] → Devuelve 2, ya que aparece 3 veces
 */
 
-const numeros = [1,2,1,3,3,5];
+/*const numeros = [1,2,1,3,3,5];
 function contadorRepetidosImpares(numerosComprobar) {
   let texto = '';
   let resultados = [
@@ -26,15 +26,55 @@ function contadorRepetidosImpares(numerosComprobar) {
       resultados[indexExist].nRepetidos++;
     }
   }
+
+  let numerosADevolver = []
   resultados.forEach(value => {
-    if (value.nRepetidos !== 0) {
-      texto += `El numero ${value.numero} aparece ${value.nRepetidos} \n`;
+    if (value.nRepetidos % 2 !== 0) {
+        numerosADevolver.push(value.numero);
+      texto += El numero ${value.numero} aparece una cantidad impar ${value.nRepetidos} de veces \n;
     }
   })
-  return texto
+  return numerosADevolver;
 }
 // contadorRepetidosImpares(numeros)
-console.log(contadorRepetidosImpares(numeros));
+console.log(contadorRepetidosImpares(numeros));*/
+
+//Abordaje que hice con Zeky
+
+const numeros = [1,2,1,3,3,5];
+function numerosQueAparecenImpares(listadoDeNums){
+    let repeticionDeNumeros =[];
+    //Vamos uno por uno por cada uno de los numeros que me pasan
+    for(i=0; i<listadoDeNums.length ;i++ ){
+        let queNumeroEstoyTrabajando = listadoDeNums[i]
+        let elNumeroEstaEnMiSectorDondeGuardoLaCantidadDeVeces =false;
+        for(j=0; j< repeticionDeNumeros.length; j++){  // Recorro mi sector donde guardo la cantidad de veces que aparece cada numero.
+            if(queNumeroEstoyTrabajando === repeticionDeNumeros[j].numero){
+                elNumeroEstaEnMiSectorDondeGuardoLaCantidadDeVeces =true;
+                repeticionDeNumeros[j].cantidaddeveces++;
+            }
+        }
+        if (elNumeroEstaEnMiSectorDondeGuardoLaCantidadDeVeces != true){
+            //Agregarlo
+            repeticionDeNumeros.push(
+                {
+                    numero: queNumeroEstoyTrabajando,
+                    cantidaddeveces: 1 
+                }
+            );
+        }
+    }  
+    let resultado= [];
+    for(i=0; i< repeticionDeNumeros.length; i++ ) 
+    {
+        if( repeticionDeNumeros[i].cantidaddeveces % 2 ===1){
+            resultado.push(repeticionDeNumeros[i].numero);
+        }
+    }
+
+    return resultado;
+}
+console.log(numerosQueAparecenImpares(numeros));
 
 
 

@@ -16,7 +16,7 @@ function multiplesCounter(n){
     let multiplesSum = 0; //Creo una vaeriable para la suma de los multiplos.
     let multiplesList = []; //Pensé pintar tbn la lista de multiplos para practicar.
 
-    for (let i = 0; i <= n; i++){ //condicionando el limite del bucle
+    for (let i = 1; i <= n; i++){ //condicionando el limite del bucle
         if (i % 3 === 0 || i % 5 === 0){
             multiplesList.push(i); //Los agrego a un array vacñio que cree para listarlos.
             multiplesSum += i; //Para ir sumándolos.

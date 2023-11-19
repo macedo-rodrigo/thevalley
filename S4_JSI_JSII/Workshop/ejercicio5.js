@@ -16,8 +16,13 @@ let arrVarius = [['Cristiano', 'Messi'], ['Neymar', 'Mbappe', 'Benzema'], ['Vini
 function concatArrays (ar){
     let result = [];
     for (i=0; i<ar.length; i++){
-        result = i.concat(ar);
+        result = result.concat(ar[i]); //nunca usar el indice i solo en el concat, siempre de forma de array [i] antecido de la variable/parametro de la funcion
     }
+
+    
+    result.sort();
+    return result;
+
 }
 
 console.log(concatArrays(arrVarius));

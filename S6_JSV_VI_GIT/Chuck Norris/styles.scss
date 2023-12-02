@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'mixins';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.card{
+    max-width: 500px;
+    min-height: 100vh;
+    border: 2px solid red;
+    margin: 25%;
+
+    &__header{
+        background-color: $color2;
+        @include center-container;
+        padding: $default-space;
+        .card__title{
+            font-size: 50px;
+            font-weight: bolder;
+            color: $color1;
+        }
+    }
+
+    &__main{
+        padding: $default-space;
+        @include center-container;
+        .card__text{
+            font-size: 30px;
+            margin: 18px;
+        }
+    }
+
+    &__categories{
+        padding: $default-space;
+        @include center-container;
+        .card__categorie{
+            list-style: none;
+            border: 1px solid gainsboro;
+            padding: 20px;
+            width: 400px;
+            margin: $default-space;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+
+    &__buttons{
+        .card__button{
+            padding: 20px;
+            font-size: 18px;
+            margin: 10px;
+        }
+    }
+
+    &__footer{
+        @include center-container;
+        background-color: $color2;
+        .card__joke{
+            font-size: 35px;
+            font-weight: bolder;
+            color: $color1;
+            margin: 20px;
+            text-align: center;
+        }
+        .card__img{
+            margin: 20px;
+        }
+    }
+
+}

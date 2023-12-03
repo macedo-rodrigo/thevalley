@@ -8,11 +8,14 @@
     font-family: monospace;
 }
 
+body{
+    @include center-container;
+    min-height: 100vh;
+}
+
 .card{
     max-width: 500px;
-    min-height: 100vh;
-    border: 2px solid red;
-    margin: 25%;
+    border: 2px solid blue;
 
     &__header{
         background-color: $color2;
@@ -37,24 +40,24 @@
     &__categories{
         padding: $default-space;
         @include center-container;
+        flex-direction: column;
         .card__categorie{
             list-style: none;
             border: 1px solid gainsboro;
             padding: 20px;
             width: 400px;
             margin: $default-space;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-size: 18px;
+            cursor: pointer;
         }
     }
 
     &__buttons{
-        .card__button{
-            padding: 20px;
-            font-size: 18px;
-            margin: 10px;
+        .card__buttons{
+            // @include center-container;
+            .card__button{
+                background-color: red;
+            }
         }
     }
 

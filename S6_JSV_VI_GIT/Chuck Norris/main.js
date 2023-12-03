@@ -9,8 +9,8 @@ fetch("https://api.chucknorris.io/jokes/categories")
         let li = document.createElement("li");
         li.textContent = categoria;
         lista.appendChild(li);
-        // Agregar una clase a los utems de la lista
-        li.className += "card__categories";
+        // Agregar una clase a los items de la lista
+        li.className += "card__categorie";
         // Ahora, agrego un clic event a cada una de esas categogia (li)
         li.addEventListener("click", () => {
             fetch(`https://api.chucknorris.io/jokes/random?category=${categoria}`) // los `` son por el uso de un string template
